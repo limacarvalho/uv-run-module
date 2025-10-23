@@ -1,0 +1,12 @@
+# Minimal example of invoking uv_run_module in a container args array.
+# Note: each item is a separate argv token (no quotes needed).
+args:
+  - python
+  - -m
+  - uv_run_module
+  - /home/jcarvalho/folder_1234
+  - ::
+  - flask
+  - run
+  - --host=0.0.0.0
+  - --port=80
